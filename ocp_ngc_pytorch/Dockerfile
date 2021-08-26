@@ -4,6 +4,6 @@ FROM nvcr.io/nvidia/pytorch:20.12-py3
 RUN apt-get update && apt-get install -y rsync && \
     pip install --no-cache-dir \
     ruamel.yaml pyyaml cmake ipympl pillow wandb torchsummary \
-    jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] \
+    jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] numpy \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
 
