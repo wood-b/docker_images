@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:21.05-py3
+FROM nvcr.io/nvidia/pytorch:20.12-py3
 
 # install other python stuff necessary
 RUN apt-get update && apt-get install -y rsync && \
