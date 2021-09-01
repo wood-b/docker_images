@@ -6,6 +6,7 @@ COPY env.yml env/
 
 # install ocp dependencies 
 RUN conda env update --name base --file ./env/env.yml
+RUN conda clean --all
 
 WORKDIR code
 RUN git clone https://github.com/Open-Catalyst-Project/ocp.git
